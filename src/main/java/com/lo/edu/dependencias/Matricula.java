@@ -7,7 +7,7 @@ public class Matricula {
 	private Estudiante estudiante;
 	
 	public String matricular(String nombre, String apellido, String calle, String numero ) {
-		this.estudiante= new Estudiante();//JVM  heap
+		this.estudiante= new Estudiante();//JVM  heap // INYECCION DE DEPENDENCIAS	
 		this.estudiante.setNombre(nombre);
 		this.estudiante.setApellido(apellido);
 		
