@@ -1,11 +1,13 @@
-package com.lo.edu.dependencias;
+package com.lo.edu.inyeccion.dependencias;
 
 import java.util.Scanner;
 
-public class MainUCE {
+
+
+public class MainFramework {
 
 	public static void main(String[] args) {
-		Scanner scannerInt = new Scanner(System.in);
+		
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("ingrese nombre: ");
 		String nombre = scanner.nextLine();
@@ -19,19 +21,17 @@ public class MainUCE {
 		System.out.println("ingrese numeracion: ");
 		String numeracion = scanner.nextLine();
 		
-		System.out.println("ingrese tipo: ");
-		int tipo = scannerInt.nextInt();
-		
 		// TODO Auto-generated method stub
 		
 		
 
-		Matricula matricula = new Matricula();
+		Matricula matricula = new Matricula(new Estudiante(),new Direccion());
 		matricula.setAnio(2015);
 		matricula.setSemestre("Sexto");
 		
-		String mensaje = matricula.matricular(nombre,apellido,calle,numeracion,tipo);
+		String mensaje = matricula.matricular(nombre,apellido,calle,numeracion);
 		System.out.println(mensaje);
+
 	}
 
 }

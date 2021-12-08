@@ -1,19 +1,18 @@
-package com.lo.edu.dependencias;
+package com.lo.edu.inyeccion.dependencias;
 
 public class Estudiante {
 	
-	protected String nombre;
-	protected String apellido;
-	protected Direccion direccion;
+	private String nombre;
+	private String apellido;
+	private Direccion direccion;
 	
-
-	// Metodos SET y Get
-
 	public void pagarServiPagos(String nombre) {
 		System.out.println(nombre + "El estudiante hace el pago");
 		System.out.println(nombre + "El estudiante presenta el pago");
-		System.out.println(nombre + "Tarjeta");
 	}
+
+	// Metodos SET y Get
+
 	public String getNombre() {
 		return nombre;
 	}
@@ -37,7 +36,6 @@ public class Estudiante {
 	public void setDireccion(Direccion direccion) {
 		this.direccion = direccion;
 	}
-	
 
 	@Override
 	public String toString() {

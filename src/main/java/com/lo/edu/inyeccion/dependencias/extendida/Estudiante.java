@@ -1,4 +1,4 @@
-package com.lo.edu.dependencias;
+package com.lo.edu.inyeccion.dependencias.extendida;
 
 public class Estudiante {
 	
@@ -12,7 +12,6 @@ public class Estudiante {
 	public void pagarServiPagos(String nombre) {
 		System.out.println(nombre + "El estudiante hace el pago");
 		System.out.println(nombre + "El estudiante presenta el pago");
-		System.out.println(nombre + "Tarjeta");
 	}
 	public String getNombre() {
 		return nombre;
@@ -37,7 +36,6 @@ public class Estudiante {
 	public void setDireccion(Direccion direccion) {
 		this.direccion = direccion;
 	}
-	
 
 	@Override
 	public String toString() {
