@@ -2,10 +2,7 @@ package com.lo.edu.cuentas;
 
 import java.util.Scanner;
 
-import com.lo.edu.inyeccion.dependencias.extendida.Estudiante;
-import com.lo.edu.inyeccion.dependencias.extendida.EstudianteArquitetura;
-import com.lo.edu.inyeccion.dependencias.extendida.EstudianteOdontologia;
-import com.lo.edu.inyeccion.dependencias.extendida.EstudiantesAdministracion;
+
 
 public class MainFrameworks {
 	
