@@ -23,6 +23,9 @@ public class MainFrameworks {
 		System.out.println("ingrese numero de cuenta");
 		String numeroCuenta = scanner.nextLine();
 		
+		System.out.println("ingrese saldo");
+		int saldo = scannerInt.nextInt();
+		
 		System.out.println("que tipo de cuenta desea?");
 		System.out.println("1 cuenta ahorros 2. cuenta corriente, 3. cuenta poliza");
 		System.out.println("Ingrese tipo de cuenta:");
@@ -31,6 +34,7 @@ public class MainFrameworks {
 		Cuenta cuenta = null;
 		if(tipo==1) {
 			cuenta = new CuentaAhorros();
+			
 		}else if(tipo==2) {
 			cuenta = new CuentaCorriente();
 		}else if (tipo==3){
@@ -40,7 +44,7 @@ public class MainFrameworks {
 			
 		}
 			GestorCuentas gestion = new GestorCuentas(cuenta, new CuentaHabiente());
-			gestion.gestionar(nombre, apellido, cedula, numeroCuenta);
+			
 			
 			String mensaje  = gestion.gestionar(nombre, apellido, cedula, numeroCuenta);
 			System.out.println(mensaje);

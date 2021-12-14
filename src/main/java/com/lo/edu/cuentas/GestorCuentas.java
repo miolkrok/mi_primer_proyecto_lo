@@ -22,8 +22,9 @@ public class GestorCuentas {
 		
 				
 		
-		this.cuenta.aperturaCuenta(100, 10);
+		this.cuenta.aperturaCuenta(100, 0);
 		System.out.println(this.cuenta);
+		
 		return "La cuenta guardada con exito";
 		
 	}

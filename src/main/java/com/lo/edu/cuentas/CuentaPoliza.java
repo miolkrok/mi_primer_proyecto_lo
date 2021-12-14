@@ -17,12 +17,18 @@ public class CuentaPoliza extends Cuenta{
 
 
 	public String getFechaVigencia() {
-		return fechaVigencia;
+		return "10-12-2021";
 	}
 
 
 	public void setFechaVigencia(String fechaVigencia) {
 		this.fechaVigencia = fechaVigencia;
+	}
+
+
+	@Override
+	public String toString() {
+		return "CuentaPoliza [fechaVigencia=" + fechaVigencia + "]";
 	}
 
 	

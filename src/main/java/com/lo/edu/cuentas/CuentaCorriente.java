@@ -17,12 +17,18 @@ public class CuentaCorriente extends Cuenta{
 
 
 	public String getMontoMinimo() {
-		return montoMinimo;
+		return "100";
 	}
 
 
 	public void setMontoMinimo(String montoMinimo) {
 		this.montoMinimo = montoMinimo;
+	}
+
+
+	@Override
+	public String toString() {
+		return "CuentaCorriente [montoMinimo=" + montoMinimo + "]";
 	}
 
 	

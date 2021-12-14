@@ -20,13 +20,18 @@ public class CuentaAhorros extends Cuenta{
 	}
 
 	public int getPorcentajeDescuento() {
-		return porcentajeDescuento;
+		return 10;
 	}
 
+	
 	public void setPorcentajeDescuento(int porcentajeDescuento) {
 		this.porcentajeDescuento = porcentajeDescuento;
 	}
 	
+	@Override
+	public String toString() {
+		return "CuentaAhorros [porcentajeDescuento=" + porcentajeDescuento + "]";
+	}
 
 	
 	
