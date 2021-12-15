@@ -23,10 +23,10 @@
 	<property name="edad" value="18"></property>
 	</bean>
 	<bean id="profesor" class="luis.ortiz.Profesor">
-		<constructor-arg value="Edison"></constructor-arg>
-		<constructor-arg value="Ortiz"></constructor-arg>
-		<constructor-arg value="Arquitecto"></constructor-arg>
-		<constructor-arg value="Uce"></constructor-arg>
-		</bean>
+	<constructor-arg value="Edison"></constructor-arg>
+	<constructor-arg value="Ortiz"></constructor-arg>
+	<constructor-arg value="Arquitecto"></constructor-arg>
+	<constructor-arg value="Uce"></constructor-arg>
+	</bean>
 
 </beans>
