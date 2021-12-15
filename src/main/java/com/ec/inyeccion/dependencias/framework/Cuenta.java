@@ -4,8 +4,19 @@ public class Cuenta {
 	private String numero;
 	private int saldo;
 	
-	//metodos set y get
 	
+	public Cuenta() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Cuenta(String numero, int saldo) {
+		super();
+		this.numero = numero;
+		this.saldo = saldo;
+	}
+	
+	
+	//metodos set y get
 	public String getNumero() {
 		return numero;
 	}
